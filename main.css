@@ -1,0 +1,388 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #1669bd;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #070707;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 2rem;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #0f1113;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+p {
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ffcc00;
+    color: #003366;
+}
+
+/* Image Container */
+.img-container {
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Contact Form */
+.contact-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    nav a {
+        font-size: 0.9em;
+        margin: 0 10px;
+    }
+
+    .gallery img {
+        width: 100px;
+        height: 100px;
+    }
+    @media (max-width: 768px) {
+        .gallery-item {
+            flex: 1 1 calc(50% - 20px); /* Two items per row on tablets */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .gallery-item {
+            flex: 1 1 100%; /* One item per row on mobile */
+        }
+    }
+}
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #246ab1;
+}
+.wrapper {
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.container-calendar {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#monthAndYear {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.button-container-calendar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.button-container-calendar button {
+    background: #1669bd;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button-container-calendar button:hover {
+    background: #ffcc00;
+    color: #1669bd;
+}
+
+.table-calendar {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.table-calendar th, .table-calendar td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.table-calendar th {
+    background: #003366;
+    color: white;
+    font-weight: bold;
+}
+
+.table-calendar td {
+    cursor: pointer;
+    height: 50px;
+    vertical-align: middle;
+    transition: background 0.3s;
+}
+
+.table-calendar td:hover {
+    background: #f2f2f2;
+    color: #1669bd;
+}
+
+.date-picker.selected {
+    background: #1669bd;
+    color: white;
+    border-radius: 50%;
+}
+
+.footer-container-calendar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container-calendar select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.hero {
+    background: url("ImageForArticle_22032_16430364716077167.webp") no-repeat center center/cover;
+    color: rgb(250, 247, 247);
+    text-align: center;
+    padding: 100px 20px;
+
+}
+
+.hero h1, h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.footer-links a, nav a {
+    color: #d9e4eb; /* LinkedIn's official blue color */
+    font-weight: bold;
+}
+
+.footer-links a:hover, nav a:hover {
+    text-decoration: underline;
+}
+
+/*Reset default style*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5 /*Light gray background */
+}
+/*Main container styling */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap; /*Allow item to wrap to the next row*/
+    gap: 20px; /* Spacying between items*/
+    justify-content:center; /* Center item horizentally*/
+    padding: 20px;
+}
+.gallery-item{
+    flex: 1 1 calc(40% - 15%); /* Two items per row (adjustable) */
+    max-width: calc(40% - 15%); /* Maximum width for flexibility*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around items*/
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure nothing overflow the box */
+    background-color: #fff; /* White background for items */
+    text-align: center; /* Center the text (caption) */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+/* Image styling */
+.gallery-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent unwanted gaps */
+}
+/* Caption styling */
+.gallery-item .caption {
+    padding-left: 10px; /* Space inside the caption box */
+    font-size: 16px; /* Caption text size */
+    color: #333; /* Dark gray text */
+    background-color: #fafafa; /* Light gray caption background */
+}
+/* Hover effect */
+.gallery-item:hover {
+    transform: scale (1.05); /* Slight zoom effect on hover */
+}
+
+.contact-form input, .contact-form textarea, .contact-form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+
+
+
+

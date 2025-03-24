@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Khod-A Research Centre</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!--Google Font Link for Icon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Materials+symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="main.js"></script>
+</head>
+
+
+<body>
+
+
+    <header>
+        <img src="Khod-A research centre Logo.png" alt="Khod-A Research Centre Logo">
+        <h1>Khod-A Research Centre</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#team">Team</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+         <!-- Calendar Section -->
+    <div class="wrapper">
+        <div class="container-calendar">
+            <h3 id="monthAndYear"></h3>
+            <div class="button-container-calendar">
+                <button id="previous" onclick="previous()">&#8249;</button>
+                <button id="next" onclick="next()">&#8250;</button>
+            </div>
+            <table class="table-calendar" id="calendar">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody id="calendar-body"></tbody>
+            </table>
+            <div class="footer-container-calendar">
+                <label for="day"></label>
+                <select id="day"></select>
+                <select id="month"></select>
+                <select id="year"></select>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Main Content-->
+<div class="container">
+
+    <section id="home" class="section">
+        <h2>Welcome to Khod-A Research Centre</h2>
+        <h2>About Khod-A Word</h2>
+        <p>The word "Khod-A" in Persian (خود-آ) carries deep philosophical significance, particularly within the realms of existential and metaphysical thought. It can be understood as "self-awareness" or "self-consciousness," where "Khod" means "self" and "A" refers to "existence" or "being."
+    
+            In a philosophical context, Khod-A refers to the concept of an individual becoming aware of their own existence, essence, or self. This idea is often associated with the notion of self-realisation or the deeper understanding of one’s nature in relation to the universe. It is a central theme in various philosophical traditions,  where self-awareness is seen as a step towards spiritual enlightenment and understanding one’s place in the cosmos.
+            
+            In essence, Khod-A reflects the intrinsic relationship between the self and its understanding of existence, highlighting the automatic, inherent nature of this awareness as a fundamental part of being, much like spontaneous processes in physics that occur naturally without external prompting. This concept is important in both metaphysics and philosophical debates about the nature of consciousness and identity.</p>
+        <p>Exploring Quantum Biology, Artificial Intelligence, and Philosophy to advance interdisciplinary research and innovation.</p>
+        
+    </section>
+    <section class="hero">
+        <h1>"The most complex structure in the world is the brain. Based on its intricate design, we can advance science and technology to create a better world."</h1>
+        <p>Exploring the frontiers of Quantum Biology, AI, and Computing.</p>
+    </section>
+
+    
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+    
+
+
+
+
+    <section id="research" class="section">
+        <h2>Our Research</h2>
+        <p>Our centre focuses on groundbreaking research at the intersection of Quantum Biology and Artificial Intelligence, aiming to unlock new insights into the complex processes that govern life.</p>
+        <a href="https://example.com/research" class="btn">Learn More</a>
+    </section>
+
+
+    <section id="publications" class="section">
+        <h2>Publications</h2>
+        <p>Discover our latest research papers and journal articles on advancements in Quantum Biology and Artificial Intelligence.</p>
+        <a href="https://example.com/publications" class="btn">View Publications</a>
+    </section>
+
+
+    <section id="team" class="section">
+        <h2>Meet the Team</h2>
+        <p>Our team comprises scientists, researchers, and innovators dedicated to pushing the boundaries of knowledge.</p>
+        <a href="https://example.com/team" class="btn">Meet the Team</a>
+    </section>
+
+    
+    <section id="gallery" class="section">
+        <h2 style="text-align:center;">Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="img1.jpg" alt="team" width="100" height="100" loading="lazy">
+                <p class="caption">Mahjani's Office at Khajeh Nasir Toosi University</p>
+            </div>
+            <div class="gallery-item">
+                <img src="imag2.jpeg" alt="team" width="100" height="100" loading="lazy">
+                <p class="caption">Quantum computing and AI are revolutionizing technology, enabling faster data processing and more complex problem-solving than ever before.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="imag5.webp" alt="team" width="100" height="100" loading="lazy">
+                <p class="caption">AI, combined with quantum biology, can enhance the complexity and accuracy of biological data analysis, leading to a better understanding of biological processes.</p>
+            </div>
+        </div>
+    </section>
+
+    <button onclick="showMessage()">Click Me</button>
+        <p id="hiddenMessage" style="opacity: 0; transition: opacity 1s;">Hello! Welcome to my website.</p>
+
+        <script>
+        function showMessage() {
+            document.getElementById("hiddenMessage").style.opacity = 1;
+        }
+        </script>
+
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#research">Our Research</a>
+    </nav>
+    
+    <section id="about" style="height: 200px; background: lightblue; padding: 20px;">
+        <h2>About Our Research Center</h2>
+        <p>Welcome to our research center, where we are dedicated to innovation and scientific discovery. Our team consists of leading experts working on groundbreaking projects that shape the future.</p>
+        <p>We collaborate with universities, industry leaders, and policymakers to ensure that our research makes a real-world impact.</p>
+    </section>
+    
+    <section id="research" style="height: 200px; background: lightgreen; padding: 20px;">
+        <h2>Our Research Areas</h2>
+        <p>We focus on a wide range of scientific fields, including:</p>
+        <ul>
+            <li><strong>Artificial Intelligence & Machine Learning</strong> - Developing cutting-edge AI technologies.</li>
+            <li><strong>Renewable Energy</strong> - Exploring sustainable energy solutions.</li>
+            <li><strong>Biomedical Research</strong> - Advancing healthcare and medical technologies.</li>
+            <li><strong>Environmental Science</strong> - Addressing climate change and conservation.</li>
+        </ul>
+    </section>
+    
+    <script>
+    document.querySelectorAll("nav a").forEach(anchor => {
+        anchor.addEventListener("click", function(event) {
+            event.preventDefault();
+            let targetId = this.getAttribute("href").substring(1);
+            document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+        });
+    });
+    </script>
+
+     
+
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>For any inquiries, please reach out to us via email or visit our research centre.</p>
+        <div class="contact-form" style="text-align: center;"> <!-- Center the form -->
+            <form action="/action_page.php" style="display: inline-block;"> <!-- Inline block to center form elements -->
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+    
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+    
+                <input type="submit" value="Submit">
+            </form>
+
+            <p id="error-message" style="color: red;"></p>
+            <p id="successMessage" style="display: none; color: rgb(164, 209, 164);">Message sent successfully!</p>
+        </div>
+        <p>Email: <a href="mailto:contact@khodaresearch.com">contact@khodaresearch.com</a></p>
+        <p>Address: 145 Alcester Street, Birmingham City, UK</p>
+    </section>  
+
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            let fname = document.getElementById("fname").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let message = document.getElementById("message").value.trim();
+            let errorMessage = "";
+        
+            if (fname === "") {
+                errorMessage += "First name is required.\n";
+            }
+            if (!email.includes("@") || !email.includes(".")) {
+                errorMessage += "Enter a valid email address.\n";
+            }
+            if (message.length < 10) {
+                errorMessage += "Message should be at least 10 characters long.\n";
+            }
+        
+            if (errorMessage !== "") {
+                event.preventDefault();
+                document.getElementById("error-message").textContent = errorMessage;
+            }
+        });
+    </script>
+</div>
+
+
+<footer>
+    <p>&copy; 2024 Khod-A Research Centre. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> 
+        <img src="Facebook_logo_(square).png" alt="LinkedIn" style="width:24px; height:24px;"> |
+        <a href="https://www.twitter.com" target="_blank">Twitter</a> 
+        <img src="free-twitter-logo-icon-2429-thumb.png" alt="LinkedIn" style="width:24px; height:24px;"> |
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <img src="174857.png" alt="LinkedIn" style="width:24px; height:24px;">
+        </a>
+    </div>
+    <p>&copy; <span id="yearFooter"></span> Your Website Name. All rights reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
